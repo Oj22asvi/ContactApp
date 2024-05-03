@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Bar</title>
+<style>
+  body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    margin-right: 20px;
+    width: 100px; /* Adjust the width as per your logo size */
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+  }
+
+  .party-info ul {
+    list-style-type: disc; /* Set the list style type */
+    list-style-color: black; /* Set the color of the bullets */
+    padding: 0;
+  }
+
+  .party-info ul li {
+    margin-bottom: 10px;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .file-upload {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .survey-questions {
+    margin-top: 20px;
+  }
+
+  .survey-questions input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div>
+    <a href="#">Database</a>
+    <a href="#">Home</a>
+    <a href="#">Login</a>
+    <a href="#">Forms</a>
+    <a href="#">MyAI</a>
+  </div>
+  <img src="customer_logo.png" alt="Customer Logo" class="logo">
+</nav>
+
+<div class="container">
+
+  <section class="party-info">
+    <ul>
+        <li>Location</li>
+        <li>Party</li>
+        <li>Donor</li>
+        <li>Amount</li>
+        <li>Cast</li>
+        <li>Call</li>
+        <li>Bio</li>
+      </ul>
+      <br>
+      <br>
+      <hr>
+      <br>
+    Upload Data:<label for="file-upload" class="file-upload">Choose File</label>
+    <input type="file" id="file-upload">
+
+    <div class="survey-questions">
+      <p>Survey Questions:</p>
+      <input type="text">
+      <p>Coming Soon</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>John Doe</h3>
+    <h4>Phone Number</h4>
+    <div class="status-box">
+      <p>Status: Active</p>
+    </div>
+    <h4>Other Numbers</h4>
+    <p>999-999-9999</p>
+  </section>
+
+  <section>
+    <h3>Notes</h3>
+    <p>This is some text for the notes section.</p>
+    <div class="notes-box">
+      <h4>Enter Notes</h4>
+      <textarea rows="4" cols="50"></textarea>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
